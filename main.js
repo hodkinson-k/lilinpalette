@@ -26,7 +26,7 @@
     year: 2025,
     medium: "Oil on canvas",
     size: "30×30 cm",
-    image: "images/LIN_LI_MA_OIL_30cmx30cm_2025_reducedquality.jpg",
+    image: "images/LIN_LI_MA_Oil_30cmx30cm_2025_reducedquality.jpg",
     caption: "Errigal as a locus of emotion: complementary blues and oranges, directional strokes, and impasto unite sky and land in motion.",
     featured: false
   },
@@ -36,7 +36,7 @@
     year: 2025,
     medium: "Oil on canvas",
     size: "40×30 cm",
-    image: "images/LIN_LI_MA_OIL_40cmx30cm_2025_reducedquality.jpg",
+    image: "images/LIN_LI_MA_Oil_40cmx30cm_2025_reducedquality.jpg",
     caption: "Heavy oil and palette-knife textures emphasise surface and gesture—matter painting meets landscape.",
     featured: false
   },
