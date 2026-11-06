@@ -16,9 +16,13 @@ Project Structure
 
 .
 ├── index.html        # Main HTML layout
+
 ├── style.css         # Styling, custom variables, and media queries
+
 ├── main.js          # Dynamic data rendering (artworks, CV, exhibitions)
+
 ├── images/           # Web-optimized artwork image files
+
 └── CV/               # PDF download assets
 
 
