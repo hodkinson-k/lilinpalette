@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artist Portfolio — Lín Li</title>
+  <meta name="description" content="Portfolio website for a contemporary oil painter: gallery, exhibitions, bio, and contact." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><span class="dot"></span><span id="brandName">Lín Li 李琳</span></div>
+      <nav class="links" id="navLinks">
+        <a href="#home" data-route>Home</a>
+        <a href="#gallery" data-route>Gallery</a>
+        <a href="#exhibitions" data-route>Exhibitions</a>
+        <a href="#about" data-route>About</a>
+        <a href="#contact" data-route>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO / HOME -->
+    <section id="home" class="route">
+      <div class="hero">
+        <div class="intro card">
+          <div id="artistChinese">李琳</div>
+          <div class="brushstroke" aria-hidden="true"></div>
+          <h1 id="siteTitle">Oil Paintings by Lín Li</h1>
+          <p class="subtitle" id="siteTag">Irish landscapes, memory, and light - heavy impasto, directional strokes, and a warm palette.</p>
+          <p class="subtitle" id="siteQuote" style="margin-top:6px; opacity:.9;"></p>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="#gallery" data-route>View Gallery</a>
+            <a class="btn" style="background:rgba(255,255,255,.08); color:var(--ink); box-shadow: inset 0 0 0 1px rgba(255,255,255,.14)" href="#about" data-route>Artist Bio</a>
+          </div>
+        </div>
+        <div class="preview card">
+          <img id="heroImg" src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Featured artwork preview" loading="lazy" />
+        </div>
+      </div>
+      <!-- Mini gallery strip -->
+      <div class="mini-strip" id="miniStrip" aria-label="Highlights"></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="route" hidden>
+      <h2>Gallery</h2>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- EXHIBITIONS -->
+    <section id="exhibitions" class="route" hidden>
+      <h2>Exhibitions</h2>
+      <div class="exhibitions" id="exhibitionsList"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="route" hidden>
+      <h2>About the Artist</h2>
+      <div class="about-grid">
+        <div class="card" style="padding:24px;">
+  <p id="bioText"></p>
+  <div id="statementText"></div>
+</div>
+        <div class="cv">
+          <strong>Selected CV</strong>
+          <ul id="cvList">
+            <li>2025 - Boomer Gallery, London - Group Exhibition</li>
+            <li>2024 - Dunluce Castle Series - Studio Release</li>
+            <li>2023 - Summer Palace Studies - Studio Research</li>
+          </ul>
+          <div style="margin-top:10px"><a href="#" id="cvDownload">Download CV (PDF)</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="route" hidden>
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="card" style="padding:18px;">
+          <p>If you’re interested in originals, commissions, or exhibition opportunities, please get in touch.</p>
+          <p>Email: <a id="emailLink" href="mailto:hello@example.com">hello@example.com</a></p>
+          <p>Instagram: <a id="igLink" href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">@yourhandle</a></p>
+        </div>
+        <form class="card" style="padding:18px;" id="contactForm">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell me about the piece you like…" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send</button>
+          <p id="formMsg" class="subtitle" style="margin:0"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <figure>
+      <img id="lbImg" alt="Artwork" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <footer class="wrap">
+    © <span id="year"></span> <span id="footerName">Lín Li</span>. All rights reserved.
+  </footer>
+<script src="main.js" defer></script>
+</body>
+</html>
