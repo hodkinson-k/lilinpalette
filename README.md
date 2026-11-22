@@ -6,7 +6,7 @@ Features
 
 Gallery & Lightbox: Filterable catalog with responsive previews, detailed metadata, and artwork captions.
 
-Exhibition History: Chronological list of solo and group exhibitions across the UK, Europe, Asia, and the US.
+Exhibition History: Chronological list of solo and group exhibitions in the UK and internationally, including juried online shows.
 
 Artist Statement & CV: Clean editorial typography highlighting her cross-cultural practice, with an integrated CV download.
 
