@@ -12,6 +12,8 @@ Artist Statement & CV: Clean editorial typography highlighting her cross-cultura
 
 Direct Contact: Integrated enquiry form with direct email functionality.
 
+English / Simplified Chinese: an EN / 中文 button in the header switches language. The choice is remembered, and `?lang=zh` links straight to the Chinese version. To edit text, change the `en` / `zh` pair in `main.js` (artworks, exhibitions and about content near the top; buttons and labels in `UI`). A missing `zh` value falls back to English.
+
 Project Structure
 
 .
