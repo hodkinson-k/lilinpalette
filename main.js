@@ -285,8 +285,13 @@ function setRoute(hash){
   const target = (hash || location.hash || '#home').replace('#','');
   routes.forEach(s => s.hidden = s.id !== target);
   links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${target}`));
+  // Each "page" starts at the top, rather than keeping the previous page's scroll position
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
 }
 window.addEventListener('hashchange', () => setRoute(location.hash));
+// On a direct link such as /#exhibitions the browser jumps to that section after
+// our script runs, tucking its heading under the sticky header; start at the top instead.
+window.addEventListener('load', () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' }));
 
 // =====================================================================
 //  Render
