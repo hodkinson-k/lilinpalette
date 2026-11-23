@@ -29,6 +29,45 @@ const ARTWORKS = [
     featured: false
   },
   {
+    id: "a13",
+    title: { en: "Tranquil Moment in Gleann na Srutha", zh: "溪谷的宁静时刻" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "35.4 × 25.4 cm",
+    image: "images/LIN_LI_TranquilMoment_GleannNaSrutha_reducedquality.jpg",
+    caption: {
+      en: "Inspired by Streamvale Farm, Northern Ireland: heavy impasto abstracts the land into colour and rhythm, with deer as quiet anchors in an imagined valley of streams.",
+      zh: "灵感源自北爱尔兰的溪谷农场：厚重的厚涂将土地抽象为色彩与节奏，鹿群成为这片想象中溪流之谷里安静的锚点。"
+    },
+    featured: false
+  },
+  {
+    id: "a14",
+    title: { en: "The Silence of Ghaibhóile", zh: "盖沃莱的寂静" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "30.5 × 25.4 cm",
+    image: "images/LIN_LI_SilenceOfGhaibhoile_reducedquality.jpg",
+    caption: {
+      en: "A small thatched cottage in the folds of the Antrim hills, caught between dusk and dream—silence rendered as the slow language of shadow, colour and descending night.",
+      zh: "安特里姆山峦褶皱中的一座茅草小屋，定格于黄昏与梦境之间——寂静化作阴影、色彩与夜幕缓缓降临的语言。"
+    },
+    featured: false
+  },
+  {
+    id: "a15",
+    title: { en: "Ten Minutes After Sunset, Béal Feirste", zh: "日落后十分钟·贝尔法斯特" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "40 × 30 cm",
+    image: "images/LIN_LI_TenMinutesAfterSunset_BealFeirste_reducedquality.jpg",
+    caption: {
+      en: "Belfast Docks in the fleeting minutes after sunset: fiery orange against deep cobalt, boats at rest beneath a restless sky, reflections shimmering like fragments of fire.",
+      zh: "日落后转瞬即逝的贝尔法斯特码头：炽烈的橙与深沉的钴蓝相互交织，船只静泊于躁动的天空下，倒影如火焰碎片般闪烁。"
+    },
+    featured: false
+  },
+  {
     id: "a9",
     title: { en: "Flowing Mountain Light, Aontroim", zh: "流动的山光·安特里姆" },
     year: 2025,
