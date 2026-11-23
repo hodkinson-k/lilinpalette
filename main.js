@@ -16,6 +16,71 @@ const OIL_ON_CANVAS = { en: "Oil on canvas", zh: "布面油画" };
 
 const ARTWORKS = [
   {
+    id: "a8",
+    title: { en: "Sláinte", zh: "干杯" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "14.8 × 21 cm",
+    image: "images/LIN_LI_Slainte_reducedquality.jpg",
+    caption: {
+      en: "Named after the Irish toast ‘to your health’: a glass of stout with a luminous golden head amid swirling blues and yellows—an everyday ritual raised into a symbol of community and connection.",
+      zh: "以爱尔兰祝酒词“干杯（祝你健康）”命名：一杯泛着金色泡沫的黑啤，置身于旋动的蓝与黄之中——日常的仪式升华为社群与联结的象征。"
+    },
+    featured: false
+  },
+  {
+    id: "a9",
+    title: { en: "Flowing Mountain Light, Aontroim", zh: "流动的山光·安特里姆" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "24 × 30 cm",
+    image: "images/LIN_LI_FlowingMountainLight_Aontroim_2025_reducedquality.jpg",
+    caption: {
+      en: "Shifting light over the hills near Doagh Road, County Antrim: rhythmic impasto turns weather and emotion into a single luminous field of moving colour.",
+      zh: "安特里姆郡多赫路附近山丘上变幻的光线：富有节奏的厚涂笔触，将天气与情感化为一片流动的光色之场。"
+    },
+    featured: false
+  },
+  {
+    id: "a10",
+    title: { en: "Vortex of Bóthar na bhFál Dorcha", zh: "黑暗树篱之漩涡" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "30 × 30 cm",
+    image: "images/LIN_LI_VortexOfBotharNaBhFalDorcha_2025_reducedquality.jpg",
+    caption: {
+      en: "The Dark Hedges of County Antrim reimagined as a spiritual spiral: branches twist like flames and light bleeds into shadow, between beauty and unease.",
+      zh: "安特里姆郡的黑暗树篱被重新想象为一个精神的漩涡：枝干如火焰般扭转，光渗入阴影，游走于美与不安之间。"
+    },
+    featured: false
+  },
+  {
+    id: "a11",
+    title: { en: "Eternal Currents — Machaire Rabhartaigh Shore", zh: "永恒之流·马赫拉罗尔蒂海岸" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "24 × 30 cm",
+    image: "images/LIN_LI_EternalCurrents_MachaireRabhartaighShore_reducedquality.jpg",
+    caption: {
+      en: "The Atlantic shore at Magheraroarty: thick impasto, directional strokes and the tension of cobalt blue against cadmium yellow animate a living geography of wind, tide and emotion.",
+      zh: "马赫拉罗尔蒂的大西洋海岸：厚涂、方向性笔触以及钴蓝与镉黄之间的张力，激活了一片由风、潮汐与情感构成的鲜活地理。"
+    },
+    featured: false
+  },
+  {
+    id: "a12",
+    title: { en: "Golden Portaigh R-255", zh: "金色泥炭地 R-255" },
+    year: 2025,
+    medium: OIL_ON_CANVAS,
+    size: "30 × 30 cm",
+    image: "images/LIN_LI_GoldenPortaighR255_2025_reducedquality.jpg",
+    caption: {
+      en: "The peatlands along the R-255 in County Donegal: golden vegetation against distant blue mountains, restless clouds and wind-swept impasto evoking both vitality and solitude.",
+      zh: "多尼戈尔郡R-255公路沿线的泥炭地：金色植被映衬远处的蓝色山峦，躁动的云层与随风而动的厚涂笔触，唤起生机与孤寂。"
+    },
+    featured: false
+  },
+  {
     id: "a1",
     title: { en: "Crimson Plateau of An Mhucais", zh: "马基什山的绯红高原" },
     year: 2025,
