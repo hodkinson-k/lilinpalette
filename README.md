@@ -8,7 +8,7 @@ Gallery & Lightbox: Filterable catalog with responsive previews, detailed metada
 
 Exhibition History: Chronological list of solo and group exhibitions in the UK and internationally, including juried online shows.
 
-Artist Statement & CV: Clean editorial typography highlighting her cross-cultural practice, with an integrated CV download.
+Artist Statement & CV: Clean editorial typography highlighting her cross-cultural practice, with a selected CV.
 
 Direct Contact: Integrated enquiry form with direct email functionality.
 
@@ -23,9 +23,8 @@ Project Structure
 
 ├── main.js          # Dynamic data rendering (artworks, CV, exhibitions)
 
-├── images/           # Web-optimized artwork image files
+└── images/           # Web-optimized artwork image files
 
-└── CV/               # PDF download assets
 
 
 Local Development

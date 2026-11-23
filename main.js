@@ -9,7 +9,6 @@ const SITE = {
   email: "lli30@qub.ac.uk",
   instagram: "lilinpalette",
   hero: "images/OilPainting_LinLi_SymphonyOfTheDome_BealFeirste_reducedquality.jpg",
-  cvPdfUrl: "CV/CV_LIN_LI.pdf",
   // Paintings shown in the home page strip, in order (artwork ids from ARTWORKS below)
   homeHighlights: [
     "a9",   // Flowing Mountain Light, Aontroim
@@ -278,7 +277,6 @@ const UI = {
     "about.title": "About the Artist",
     "about.statement": "Artist Statement",
     "about.cv": "Selected CV",
-    "about.cvDownload": "Download CV (PDF)",
     "contact.title": "Contact",
     "contact.intro": "If you’re interested in originals, commissions, or exhibition opportunities, please get in touch.",
     "contact.email": "Email:",
@@ -316,7 +314,6 @@ const UI = {
     "about.title": "关于艺术家",
     "about.statement": "艺术家自述",
     "about.cv": "简历精选",
-    "about.cvDownload": "下载简历（PDF，英文）",
     "contact.title": "联系方式",
     "contact.intro": "如您对原作收藏、委托创作或展览合作感兴趣，欢迎与我联系。",
     "contact.email": "邮箱：",
@@ -428,7 +425,6 @@ function render(){
   const ig = SITE.instagram ? `https://instagram.com/${SITE.instagram}` : '#';
   byId('igLink').href = ig;
   byId('igLink').textContent = SITE.instagram ? `@${SITE.instagram}` : '@instagram';
-  if (SITE.cvPdfUrl && SITE.cvPdfUrl !== '#') byId('cvDownload').href = SITE.cvPdfUrl;
 
   // About
   byId('bioText').textContent = L(ABOUT.bio);
