@@ -9,7 +9,14 @@ const SITE = {
   email: "lli30@qub.ac.uk",
   instagram: "lilinpalette",
   hero: "images/OilPainting_LinLi_SymphonyOfTheDome_BealFeirste_reducedquality.jpg",
-  cvPdfUrl: "CV/CV_LIN_LI.pdf"
+  cvPdfUrl: "CV/CV_LIN_LI.pdf",
+  // Paintings shown in the home page strip, in order (artwork ids from ARTWORKS below)
+  homeHighlights: [
+    "a9",   // Flowing Mountain Light, Aontroim
+    "a10",  // Vortex of Bóthar na bhFál Dorcha
+    "a4",   // The Winds of Sliabh Mis
+    "a14"   // The Silence of Ghaibhóile
+  ]
 };
 
 const OIL_ON_CANVAS = { en: "Oil on canvas", zh: "布面油画" };
@@ -25,8 +32,7 @@ const ARTWORKS = [
     caption: {
       en: "Named after the Irish toast ‘to your health’: a glass of stout with a luminous golden head amid swirling blues and yellows—an everyday ritual raised into a symbol of community and connection.",
       zh: "以爱尔兰祝酒词“干杯（祝你健康）”命名：一杯泛着金色泡沫的黑啤，置身于旋动的蓝与黄之中——日常的仪式升华为社群与联结的象征。"
-    },
-    featured: false
+    }
   },
   {
     id: "a13",
@@ -38,8 +44,7 @@ const ARTWORKS = [
     caption: {
       en: "Inspired by Streamvale Farm, Northern Ireland: heavy impasto abstracts the land into colour and rhythm, with deer as quiet anchors in an imagined valley of streams.",
       zh: "灵感源自北爱尔兰的溪谷农场：厚重的厚涂将土地抽象为色彩与节奏，鹿群成为这片想象中溪流之谷里安静的锚点。"
-    },
-    featured: false
+    }
   },
   {
     id: "a14",
@@ -51,8 +56,7 @@ const ARTWORKS = [
     caption: {
       en: "A small thatched cottage in the folds of the Antrim hills, caught between dusk and dream—silence rendered as the slow language of shadow, colour and descending night.",
       zh: "安特里姆山峦褶皱中的一座茅草小屋，定格于黄昏与梦境之间——寂静化作阴影、色彩与夜幕缓缓降临的语言。"
-    },
-    featured: false
+    }
   },
   {
     id: "a15",
@@ -64,8 +68,7 @@ const ARTWORKS = [
     caption: {
       en: "Belfast Docks in the fleeting minutes after sunset: fiery orange against deep cobalt, boats at rest beneath a restless sky, reflections shimmering like fragments of fire.",
       zh: "日落后转瞬即逝的贝尔法斯特码头：炽烈的橙与深沉的钴蓝相互交织，船只静泊于躁动的天空下，倒影如火焰碎片般闪烁。"
-    },
-    featured: false
+    }
   },
   {
     id: "a9",
@@ -77,8 +80,7 @@ const ARTWORKS = [
     caption: {
       en: "Shifting light over the hills near Doagh Road, County Antrim: rhythmic impasto turns weather and emotion into a single luminous field of moving colour.",
       zh: "安特里姆郡多赫路附近山丘上变幻的光线：富有节奏的厚涂笔触，将天气与情感化为一片流动的光色之场。"
-    },
-    featured: false
+    }
   },
   {
     id: "a10",
@@ -90,8 +92,7 @@ const ARTWORKS = [
     caption: {
       en: "The Dark Hedges of County Antrim reimagined as a spiritual spiral: branches twist like flames and light bleeds into shadow, between beauty and unease.",
       zh: "安特里姆郡的黑暗树篱被重新想象为一个精神的漩涡：枝干如火焰般扭转，光渗入阴影，游走于美与不安之间。"
-    },
-    featured: false
+    }
   },
   {
     id: "a11",
@@ -103,8 +104,7 @@ const ARTWORKS = [
     caption: {
       en: "The Atlantic shore at Magheraroarty: thick impasto, directional strokes and the tension of cobalt blue against cadmium yellow animate a living geography of wind, tide and emotion.",
       zh: "马赫拉罗尔蒂的大西洋海岸：厚涂、方向性笔触以及钴蓝与镉黄之间的张力，激活了一片由风、潮汐与情感构成的鲜活地理。"
-    },
-    featured: false
+    }
   },
   {
     id: "a12",
@@ -116,8 +116,7 @@ const ARTWORKS = [
     caption: {
       en: "The peatlands along the R-255 in County Donegal: golden vegetation against distant blue mountains, restless clouds and wind-swept impasto evoking both vitality and solitude.",
       zh: "多尼戈尔郡R-255公路沿线的泥炭地：金色植被映衬远处的蓝色山峦，躁动的云层与随风而动的厚涂笔触，唤起生机与孤寂。"
-    },
-    featured: false
+    }
   },
   {
     id: "a1",
@@ -129,8 +128,7 @@ const ARTWORKS = [
     caption: {
       en: "A semi-abstract vision of Muckish at dusk: saturated crimsons and sweeping impasto animate a ‘glowing plateau’ felt between waking and dream.",
       zh: "黄昏时分马基什山的半抽象景象：饱和的绯红与大幅厚涂笔触，赋予这片“发光的高原”一种介于清醒与梦境之间的生命。"
-    },
-    featured: true
+    }
   },
   {
     id: "a2",
@@ -142,8 +140,7 @@ const ARTWORKS = [
     caption: {
       en: "Errigal as a locus of emotion: complementary blues and oranges, directional strokes, and impasto unite sky and land in motion.",
       zh: "埃里格尔山作为情感的场域：蓝与橙的互补色、方向性笔触与厚涂技法，将天空与大地融为流动的整体。"
-    },
-    featured: false
+    }
   },
   {
     id: "a3",
@@ -155,8 +152,7 @@ const ARTWORKS = [
     caption: {
       en: "Heavy oil and palette-knife textures emphasise surface and gesture—matter painting meets landscape.",
       zh: "厚重的油彩与画刀肌理强调画面表面与笔势——物质绘画与风景在此相遇。"
-    },
-    featured: false
+    }
   },
   {
     id: "a4",
@@ -168,8 +164,7 @@ const ARTWORKS = [
     caption: {
       en: "Vigorous, rhythmic strokes render Slemish’s contours; swirling skies and high-purity hues convey seasonal vitality and inner resonance.",
       zh: "富有节奏的有力笔触勾勒出斯莱米什山的轮廓；旋动的天空与高纯度色彩传达出季节的生机与内心的共鸣。"
-    },
-    featured: false
+    }
   },
   {
     id: "a5",
@@ -181,8 +176,7 @@ const ARTWORKS = [
     caption: {
       en: "Bold, sculptural impasto and palette-knife relief turn Dunlewey’s terrain into a sensorial encounter of movement and feeling.",
       zh: "雕塑般大胆的厚涂与画刀浮雕，将邓卢伊的地貌化为一场关于运动与情感的感官体验。"
-    },
-    featured: false
+    }
   },
   {
     id: "a6",
@@ -194,8 +188,7 @@ const ARTWORKS = [
     caption: {
       en: "Short, directional strokes thread light across lake and sky; contrasting blues, yellows, and oranges evoke spiritual calm and tension.",
       zh: "短促的方向性笔触让光线穿行于湖面与天空之间；蓝、黄、橙的对比色唤起精神上的宁静与张力。"
-    },
-    featured: false
+    }
   },
   {
     id: "a7",
@@ -207,8 +200,7 @@ const ARTWORKS = [
     caption: {
       en: "Belfast City Hall amid kinetic urban rhythm: impasto, chromatic contrasts, and gestural light articulate monument and modern tempo.",
       zh: "置身于跃动城市节奏中的贝尔法斯特市政厅：厚涂、色彩对比与富有笔势的光影，诠释了纪念性建筑与现代都市的节奏。"
-    },
-    featured: false
+    }
   }
 ];
 
@@ -471,10 +463,10 @@ function render(){
     return card;
   }));
 
-  // Mini gallery strip: 4 highlights (featured first, then most recent)
-  const highlights = [...ARTWORKS]
-    .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || b.year - a.year)
-    .slice(0, 4);
+  // Home page strip: the paintings listed in SITE.homeHighlights, in that order
+  const highlights = SITE.homeHighlights
+    .map(id => ARTWORKS.find(a => a.id === id))
+    .filter(Boolean);
   byId('miniStrip').replaceChildren(...highlights.map(a => {
     const div = el('div', 'mini-item');
     const img = el('img');
